@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <title>WebRTC and Socket.IO signaling</title>
+  </head>
+  <body>
+	<script src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript">
+		var socket = io();
+
+		var pc = window.RTCPeerConnection || window.mozRTCPeerConnection || window.webkitRTCPeerConnection;
+		var servers = {
+			iceServers: [
+				{ url: 'stun:localhost:3000'}
+			]
+		};
+		client = new pc(servers);
+		client.createOffer(function (desc) {
+			socket.emit('offer', desc.sdp);
+			console.log(desc);
+		})
+	</script
+  </body>
+</html>
