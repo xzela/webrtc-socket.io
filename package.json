@@ -1,0 +1,29 @@
+{
+  "name": "webrtc-socket.io",
+  "version": "0.0.1",
+  "description": "example webrtc app with socket.io signaling",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"lol, tests...\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xzela/webrtc-socket.io.git"
+  },
+  "keywords": [
+    "socket.io",
+    "webrtc",
+    "rtc",
+    "nodejs"
+  ],
+  "author": "Zeph LaFassett <zeph@lafassett.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xzela/webrtc-socket.io/issues"
+  },
+  "homepage": "https://github.com/xzela/webrtc-socket.io",
+  "dependencies": {
+    "express": "4.9.x",
+    "socket.io": "1.1.x"
+  }
+}
